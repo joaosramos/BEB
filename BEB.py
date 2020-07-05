@@ -1,27 +1,26 @@
-def BEB(nome, initial_energy=1, final_energy=500):
-    nomef=nome
-    #Retira a extensão do nome do input
-    nome = nome.replace(".txt", "")
+from math import pi, log
+from plotar import plotar
+import re
 
-    #Seta as variaveis de dentro da função
-    ar = nome
-    T = energia_inicio
-    Tf = energia_fim
-
-    #Variaveis do BEB e definição da lista vazia
-    a = 0.5292
-    R = 13.61
-    soma = 0
-    Tx = []
-    Secao = []
-
-    #Abre o arquivo que foi enviado e que esta salvo e executa o BEB em si
-    with open("{}.txt".format(nome), "r") as data:
+def BEB(ar):
+    
+    with open(ar+".txt", "r") as data:
+        #importação dos dados
         dados = data.read().split('\n')
         d=[]
 
         for i in range(0, len(dados)):
             dados[i]=list(map(float, dados[i].split('\t')))
+
+        #fim da importação
+
+        T=5
+        Tf=500
+        a=0.5292
+        R=13.61
+        soma = 0
+        Tx=[]
+        Secao=[]
         
         while T<Tf:
             soma = 0
@@ -39,12 +38,17 @@ def BEB(nome, initial_energy=1, final_energy=500):
                 if T>B:
                     soma = soma + sBEB
                 
+
             Tx.append(T)
             Secao.append(soma)
             T = T + 1
 
-        #Salva no arquivo resposta
-        with open("CrossSection.txt", "w") as n:
+        with open(ar+"-grafico"+".txt", "w") as n:
             
+
             for u in range(0, len(Tx)):
                 n.write(str(Tx[u])+" "+str(Secao[u])+"\n")
+
+    
+    plotar(ar+"-grafico", colorG="green")
+    
