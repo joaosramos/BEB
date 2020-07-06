@@ -48,4 +48,20 @@ A implementação do BEB deste plano de trabalho gerou resultados muito satisfat
 No entanto a boa escolha da base influencia os resultados experimentais, como podemos ver:
 <figure>
   <img src="Imagens_Repositorio/graficos.png">
+  <figcaption><i>: A figura da esquerda é o calculo da seção de choque pelo método de
+BEB utilizando dados provenientes do GAMESS com a Base 6 − 31G(3d, 3p); A figura da direita, representa a seção de choque com dados provenientes do GAMESS e configuração de base 6−mini(1d, 1p)</i></figcaption>
 </figure>
+
+A base 6− 31G(3d, 3p) apresenta resultado melhor com erro em relação aos valores experimentais de -5.9%, enquanto a outra base apresentou erro de -13.7%. No entanto, esta diferença nem sempre se repete, e a menor energia nem sempre resulta numa melhor descrição.
+
+Para algumas moléculas temos uma tabela que mostra o valor da seção de choque para duas bases diferentes, entre parenteses as diferenças percentuais desses valores em relação aos dados experimentais:
+
+<img src="Imagens_Repositorio/comp1.png">
+
+Para a base  6− 31G(3d, 3p):
+
+<img src="Imagens_Repositorio/comp2.png">
+
+Para a base  6− mini(1d, 1p):
+
+<img src="Imagens_Repositorio/comp3.png">
