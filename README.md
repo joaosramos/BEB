@@ -1,4 +1,4 @@
-<img src="UFPR.jpg" height=150 width=250>
+<img src="Imagens_Repositorio/UFPR.jpg" height=150 width=250>
 
 # BEB
 ## *Abstract*
@@ -32,6 +32,8 @@ ou mensurar. Para contornar esse problema, podemos nos utilizar do calculo dessa
 através do Método de BEB(BINARY-ENCOUNTER-BETHE), nesse calculo utilizamos apenas os resultados advindos de softwares de calculo de estrutura eletronica, como o GAMESS. Basicamente, a seção de choque de ionização é, para os efeitos do método de BEB, a área sobre uma molécula, que mede a chance de colisão de um elétron da molécula com um elétron disparado contra ela, sendo que o processo resulta na ionização da molécula e consequente retirada do elétron.
 
 A Equação de BEB é, portanto
+
+<img src="Imagens_Repositorio/beb.png">
 
 
 
