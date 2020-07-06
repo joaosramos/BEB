@@ -35,6 +35,13 @@ A Equação de BEB é, portanto
 
 <img src="Imagens_Repositorio/beb.png">
 
-
-
+A implementação do BEB deste plano de trabalho gerou resultados muito satisfatórios em relação aos dados experimentais e aos dados ja presentes na literatura. Ao comparar os resultados obtidos por esta implementação do BEB com os dados obtidos pelo NIST, temos o gráfico abaixo:
+<figure>
+  <img src="Imagens_Repositorio/Grafico1.png">
+  <figcaption><i>À esquerda os dados advindos do NIST e implementação do NIST. À direita com os dados e calculos obtidos por mim e com minha implementação do BEB.</i></figcaption>
   
+  Podemos observar que a concordancia é realmente boa. Está concordancia se repete ao longo de várias moléculas comparadas com a base de dados do NIST, no entanto, esta versão do BEB funciona apenas para os casos sem dupla ionização.
+  Em relação aos dados experimentais o BEB se mostra bem preciso, como podemos ver:
+  
+ 
+</figure>
