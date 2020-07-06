@@ -39,9 +39,13 @@ A implementação do BEB deste plano de trabalho gerou resultados muito satisfat
 <figure>
   <img src="Imagens_Repositorio/Grafico1.png">
   <figcaption><i>À esquerda os dados advindos do NIST e implementação do NIST. À direita com os dados e calculos obtidos por mim e com minha implementação do BEB.</i></figcaption>
-  
+</figure>
+
   Podemos observar que a concordancia é realmente boa. Está concordancia se repete ao longo de várias moléculas comparadas com a base de dados do NIST, no entanto, esta versão do BEB funciona apenas para os casos sem dupla ionização.
-  Em relação aos dados experimentais o BEB se mostra bem preciso, como podemos ver:
-  
- 
+  Em relação aos dados experimentais o BEB se mostra bem preciso, como podemos ver(entre parenteses há a diferença percentual entre a seção de choque máxima obtida pelo método de BEB em relação ao resultado experimental):
+ <img src="Imagens_Repositorio/comparacao.png">
+
+No entanto a boa escolha da base influencia os resultados experimentais, como podemos ver:
+<figure>
+  <img src="Imagens_Repositorio/graficos.png">
 </figure>
