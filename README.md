@@ -17,3 +17,5 @@
 
   Este repositório foi desenvolvido no ambito do meu Plano de Trabalho de iniciação cientifica no Grupo de Física Atomica e Molecular (GFAM), na UFPR.
   
+  <img src="UFPR.jpg">
+  
