@@ -67,3 +67,11 @@ Para a base  6− mini(1d, 1p):
 <img src="Imagens_Repositorio/comp3.png">
 
 Como podemos observar, a base 6− 31G(3d, 3p) ofereceu sempre melhor descrição com menor energia, porém nem sempre a seção de choque obtida utilizando os dados dela teve o menor erro em relação a experimental. 
+
+### 2. Como utlizar o programa?
+
+Primeiramente devemos nos atentar ao input, ele deve conter, nesta ordem U, B, N. Sendo eles, a Energia Cinética Orbital, a Energia de Ligação Orbital e o Número de Ocupação Orbital. O calculo será feito em eletrovolts, então se U,B ou N estiverem em Hartree, basta executar a função e não setar valor algum para o parametro unidade. O parametro de unidade será multiplicado pelos valores de U, B, N no calculo, então se for preciso, set o 'unidade' com o fator de conversão adequado para que U, B e N entrem no calculo em eV. Considerando que U,B e N estão em hartree, o parametro 'unidade' já vem setado com esse fator de conversão que é 1 eV = 27,2114 hartree. 
+
+Um exemplo de entrada aceitavél é, sendo que os valores devem ser tabulados ('\t'). Este modelo considera a entrada em eV, neste caso, para executar temos *BEB("nome_arquivo", unidade=1)*
+
+<img src="https://github.com/joaosramos/site-ic-teste/blob/master/static/imagens/exemplo.png?raw=true">
