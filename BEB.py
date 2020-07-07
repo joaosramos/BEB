@@ -2,7 +2,7 @@ from math import pi, log
 from plotar import plotar
 import re
 
-def BEB(ar, Tii=5, Tff=500):
+def BEB(ar, Tii=5, Tff=500, unidade=27.2114):
     
     with open(ar+".txt", "r") as data:
         #importação dos dados
@@ -27,9 +27,9 @@ def BEB(ar, Tii=5, Tff=500):
 
             for j in range(0, len(dados)):
 
-                U=dados[j][0]
-                B=dados[j][1]
-                N=dados[j][2]
+                U=dados[j][0]*unidade
+                B=dados[j][1]*unidade
+                N=dados[j][2]*unidade
                 
                 t=T/B
                 u=U/B
