@@ -2,7 +2,7 @@ from math import pi, log
 from plotar import plotar
 import re
 
-def BEB(ar):
+def BEB(ar, Tii=5, Tff=500):
     
     with open(ar+".txt", "r") as data:
         #importação dos dados
@@ -14,8 +14,8 @@ def BEB(ar):
 
         #fim da importação
 
-        T=5
-        Tf=500
+        T=Tii
+        Tf=Tff
         a=0.5292
         R=13.61
         soma = 0
