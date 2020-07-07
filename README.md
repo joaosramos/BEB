@@ -70,8 +70,38 @@ Como podemos observar, a base 6− 31G(3d, 3p) ofereceu sempre melhor descriçã
 
 ### 2. Como utlizar o programa?
 
+#### 2.1. Preparando o Arquivo
 Primeiramente devemos nos atentar ao input, ele deve conter, nesta ordem U, B, N. Sendo eles, a Energia Cinética Orbital, a Energia de Ligação Orbital e o Número de Ocupação Orbital. O calculo será feito em eletrovolts, então se U,B ou N estiverem em Hartree, basta executar a função e não setar valor algum para o parametro unidade. O parametro de unidade será multiplicado pelos valores de U, B, N no calculo, então se for preciso, set o 'unidade' com o fator de conversão adequado para que U, B e N entrem no calculo em eV. Considerando que U,B e N estão em hartree, o parametro 'unidade' já vem setado com esse fator de conversão que é 1 eV = 27,2114 hartree. 
 
-Um exemplo de entrada aceitavél é, sendo que os valores devem ser tabulados ('\t'). Este modelo considera a entrada em eV, neste caso, para executar temos *BEB("nome_arquivo", unidade=1)*
+Um exemplo de entrada aceitavél é, sendo que os valores devem ser tabulados ('\t'). Este modelo considera a entrada em eV, neste caso, para executar temos *BEB("nome_arquivo", unidade=1)*. Não deve haver nada antes ou depois dos números, não deve haver espaços em branco depois dos números na mesma linha e nem mesmo no fim da tabela, em suma: O arquivo deve conter APENAS os numéros referentes ao calculo, na ordem U, B, N.
 
 <img src="https://github.com/joaosramos/site-ic-teste/blob/master/static/imagens/exemplo.png?raw=true">
+
+#### 2.2. Executando o programa
+Antes observe se o seu sistema tem os pre-requisitos para rodar o program, a biblioteca necessária é a matplotlib. Se você não tiver, execute *pip install matplotlib*, caso já tenha o python no seu sistema. Se tiver dúvidas, consulte: https://pypi.org/project/matplotlib/
+
+Arraste o arquivo com os dados para o programa (2.1), junto com o arquivo BEB.py e o arquivo plotar.py, para o mesmo diretório. 
+
+<img src="Imagens_Repositorio/p1.png">
+
+Entre no *shell* do python com o comando *python* (para o PowerShell windows 10, se precisar de ajuda para executar o python procure a documentação da linguagem para o seu sistema). E import o programa e sua função com o comando *from BEB import BEB*.
+
+<img src="Imagens_Repositorio/p2.png">
+
+O arquivo que contém os valores para o BEB é o *"CF4.txt"*, ele deve ser um *".txt"*. Para executar o programa, fazemos:
+
+<img src="Imagens_Repositorio/p3.png">
+
+A execução retorna uma mensagem,
+
+<img src="Imagens_Repositorio/p4.png">
+
+O programa gera dois arquivos no diretório, um com os pontos do gráfico
+
+<img src="Imagens_Repositorio/p5.png">
+
+Um com a imagem da seção de choque
+
+<img src="Imagens_Repositorio/p6.png">
+
+Se queremos personalizar o inicio e o fim das energias dos elétron incidentes (inicio e fim do gráfico, que por padrão começa em 0 eV e termina em 500 eV), basta executar *BEB("nome_arquivo", Tii=valor_inicio, Tff=valor_fim)*. Por exemplo, *BEB("CF4", Tii=10, Tff=200)*, arquivo "CF4.txt", começando em 10eV e terminando em 200eV. O valor de 'unidade' é o fator de conversão, se os dados de U, B e N estivessem em Joule, por exemplo, o valor unidade seria de 6,242e+18. Por exemplo, *BEB("CF4", Tii=2, Tff=200, unidade=6.242e+18)*. 
