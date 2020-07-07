@@ -65,3 +65,5 @@ Para a base  6− 31G(3d, 3p):
 Para a base  6− mini(1d, 1p):
 
 <img src="Imagens_Repositorio/comp3.png">
+
+Como podemos observar, a base 6− 31G(3d, 3p) ofereceu sempre melhor descrição com menor energia, porém nem sempre a seção de choque obtida utilizando os dados dela teve o menor erro em relação a experimental. 
